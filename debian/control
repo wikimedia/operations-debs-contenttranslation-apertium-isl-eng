@@ -7,7 +7,7 @@ Uploaders: Tino Didriksen <tino@didriksen.cc>,
 Build-Depends: apertium-dev (>= 3.4),
                apertium-isl,
                autotools-dev,
-               cg3,
+               cg3 (>= 1.0.0~r12254),
                debhelper (>= 9),
                dh-autoreconf,
                gawk,
@@ -19,7 +19,10 @@ Vcs-Browser: https://anonscm.debian.org/cgit/debian-science/packages/apertium-is
 
 Package: apertium-isl-eng
 Architecture: all
-Depends: apertium (>= 3.4), cg3, ${misc:Depends}, ${shlibs:Depends}
+Depends: apertium (>= 3.4),
+         cg3 (>= 1.0.0~r12254),
+         ${misc:Depends},
+         ${shlibs:Depends}
 Provides: apertium-eng-isl
 Conflicts: apertium-eng-isl
 Description: Apertium translation data for the Icelandic-English pair
